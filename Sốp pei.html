@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua Sản Phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .box:hover {
+            background-color: #dcdcdc;
+        }
+        .box p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" onclick="showPrice('Phúc Gay')">
+            <p>Phúc Gay</p>
+        </div>
+        <div class="box" onclick="showPrice('Hiệp Gay')">
+            <p>Hiệp Gay</p>
+        </div>
+        <div class="box" onclick="showPrice('Phú Gay')">
+            <p>Phú Gay</p>
+        </div>
+    </div>
+
+    <script>
+        function showPrice(product) {
+            alert(product + ' có giá 10.000 đồng.');
+        }
+    </script>
+
+</body>
+</html>
